@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hark Horning</title>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <div class="whole-page">
+
+            <!-- <img src="images/mountain background one.jpg" id="backgroundmountains" alt=""> -->
+
+        <div id="do-not-fall" class="image-parallax">
+            <img src="images/don't fall2.png" alt="my photo" class="climber">
+        </div>
+        <section class="section-one">
+            <canvas id="canvasOne"></canvas>
+            <nav class="navigation">
+                <p class="portfolio">Portfolio</p>
+                <div id="buttons">
+                    <!-- <button class="button">About Me</button>
+                    <button class="button">My Work</button>
+                    <button class="button">My Art</button> -->
+                    <!-- <button class="button border-button">Contact</button> -->
+                </div>
+            </nav>
+            <div id="page-color-block-one" class="cursor-effect"></div>
+            <div id="page-color-block-two" class="cursor-effect"></div>
+            <div id="page-color-block-three" class="cursor-effect-alt"></div>
+                <h1 id="name" class="name">Hark Horning</h1>
+                <!-- <canvas id="canvas"></canvas> -->
+                <div id="vocation-box">
+                    <h2 id="vocation" class="vocation">Front-end Developer & Designer</h2>
+                </div>
+                <div id="vocation-box2">
+                    <h2 id="vocation2" class="vocation2">Front-end Developer & Designer</h2>
+                </div>
+        </section>
+        <section id="section-two">
+            <!-- <img src="images/other no background black and white2.png" class="arrogance" alt=""> -->
+            <h3 class="about-me">About Me:</h3>
+            <p class="all-about-me">Hello! My name is Hark. In my free time I rock climb, play piano, make art.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsa assumenda natus laborum 
+                dolorem at, illo, dolores numquam, qui exercitationem cumque? Commodi perferendis ducimus quasi 
+                consequuntur error? Veritatis, cum fugiat!
+            </p>
+            <ul class="skills">
+                <li class="skills-list">javascript</li>
+                <li class="skills-list">HTML 5</li>
+                <li class="skills-list">CSS</li>
+                <li class="skills-list">React.js</li>
+                <li class="skills-list">Python</li>
+            </ul>
+        </section>
+        <section class="section-three">
+            <div id="glass-section-three"></div>
+            <h4 id="my-work">Some Projects:</h4>
+            <div class="my-work-card">
+                <div class="project-selection">
+                    <div id="projectOne" class="projects">Side Scroller Game</div>
+                    <div id="projectTwo" class="projects">Fireworks Site</div>
+                    <div id="projectThree" class="projects">Fullstack Blog Website</div>
+                    <div id="projectFour" class="projects">Figma Design</div>
+                </div>
+                <div class="hidden-display">
+                    <div id="numberOne" class="hidden-rotate">
+                        <img src="images/game.gif" alt="game gif" class="images-section">
+                        <p class="description-section">In this vanilla javascript project, I used the canvas api 
+                            to build this simple game. It's made with a few free sprite sheets I found and then some
+                            I made. It was really fun to make. I plan to make more like it.
+                        </p>
+                    </div>
+                    <div id="numberTwo" class="hidden-rotate">
+                        <img src="images/fireworks.gif" alt="site gif" class="images-section">
+                        <p class="description-section">Yellow!</p>
+                    </div>
+                    <div id="numberThree" class="hidden-rotate">
+                        <img src="" alt="image" class="images-section">
+                        <p class="description-section">Red Light!</p>
+                    </div>
+                    <div id="numberFour" class="hidden-rotate">
+                        <img src="" alt="image" class="images-section">
+                        <p class="description-section">Vrooooom!</p>
+                    </div>
+                </div>
+
+                <script>
+                    const projectOne = document.getElementById('projectOne');
+                    const projectTwo = document.getElementById('projectTwo');
+                    const projectThree = document.getElementById('projectThree');
+                    const projectFour = document.getElementById('projectFour');
+
+                    // const projects = [projectOne, projectTwo, projectTree, projectFour];
+
+                    // window.addEventListener('mouseover', (e) => {
+                    //     if ((e.projectOne)) {
+                    //         console.log('testitizing');
+                    //     }
+                    // })
+
+                    projectOne.addEventListener("mouseover", (event) => {
+                        document.getElementById("numberThree").className = 'hidden-rotate';
+                        document.getElementById("numberTwo").className = 'hidden-rotate';
+                        document.getElementById("numberFour").className = 'hidden-rotate';
+                        document.getElementById("numberOne").className = 'not-hidden';
+                    });
+                    projectTwo.addEventListener("mouseover", (event) => {
+                        document.getElementById("numberThree").className = 'hidden-rotate';
+                        document.getElementById("numberOne").className = 'hidden-rotate';
+                        document.getElementById("numberFour").className = 'hidden-rotate';
+                        document.getElementById("numberTwo").className = 'not-hidden';
+                    });
+                    projectThree.addEventListener("mouseover", (event) => {
+                        document.getElementById("numberTwo").className = 'hidden-rotate';
+                        document.getElementById("numberOne").className = 'hidden-rotate';
+                        document.getElementById("numberFour").className = 'hidden-rotate';
+                        document.getElementById("numberThree").className = 'not-hidden';
+                    });
+                    projectFour.addEventListener("mouseover", (event) => {
+                        document.getElementById("numberOne").className = 'hidden-rotate';
+                        document.getElementById("numberTwo").className = 'hidden-rotate';
+                        document.getElementById("numberThree").className = 'hidden-rotate';
+                        document.getElementById("numberFour").className = 'not-hidden';
+                    });
+
+                </script>
+            </div>
+            <!-- <div class="card-two"></div> -->
+        </section>
+        <div class="contact-me-text">Contact Me:</div>
+        <footer>
+            <div class="cursor-effect-alt-two" id="contact-form">
+                <div class="contact-left">
+                    <input type="text" class="inputs" placeholder="Name" name="" id="">
+                    <input type="email" class="inputs" placeholder="Email" name="" id="">
+                    <input type="tel" class="inputs" placeholder="Phone Number" name="" id="">
+                </div>
+                <div class="contact-right">
+                    <textarea name="" id="" class="message" cols="25" rows="6" placeholder="What you'd like to say..."></textarea>
+                    <button type="submits" class="submit-button">Submit</button>
+                </div>
+            </div>
+            <div class="social-links">
+                <p class="check-out-socials">See more on:</p>
+                <img class="social-icon" src="images/github.svg" alt="github">
+                <img class="social-icon" src="images/instagram.svg" alt="">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
