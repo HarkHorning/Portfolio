@@ -42,10 +42,7 @@
         <section id="section-two">
             <!-- <img src="images/other no background black and white2.png" class="arrogance" alt=""> -->
             <h3 class="about-me">About Me:</h3>
-            <p class="all-about-me">Hello! My name is Hark. In my free time I rock climb, play piano, make art.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ipsa assumenda natus laborum 
-                dolorem at, illo, dolores numquam, qui exercitationem cumque? Commodi perferendis ducimus quasi 
-                consequuntur error? Veritatis, cum fugiat!
+            <p class="all-about-me">Hello! My name is Hark. In my free time I rock climb, play piano, and make art.
             </p>
             <ul class="skills">
                 <li class="skills-list">javascript</li>
@@ -60,9 +57,9 @@
             <h4 id="my-work">Some Projects:</h4>
             <div class="my-work-card">
                 <div class="project-selection">
-                    <div id="projectOne" class="projects">Side Scroller Game</div>
-                    <div id="projectTwo" class="projects">Fireworks Site</div>
                     <div id="projectThree" class="projects">Fullstack Blog Website</div>
+                    <a href="https://harkhorning.github.io/2d-Game/" id="projectOne" class="projects">Side Scroller Game</a>
+                    <div id="projectTwo" class="projects">Fireworks Site</div>
                     <div id="projectFour" class="projects">Figma Design</div>
                 </div>
                 <div class="hidden-display">
@@ -132,21 +129,25 @@
         </section>
         <div class="contact-me-text">Contact Me:</div>
         <footer>
-            <div class="cursor-effect-alt-two" id="contact-form">
+            <form action="https://formsubmit.co/hjhorning@gmail.com" method="post" class="cursor-effect-alt-two" id="contact-form">
                 <div class="contact-left">
-                    <input type="text" class="inputs" placeholder="Name" name="" id="">
-                    <input type="email" class="inputs" placeholder="Email" name="" id="">
-                    <input type="tel" class="inputs" placeholder="Phone Number" name="" id="">
+                    <input type="text" class="inputs" placeholder="Name" name="name" id="" required>
+                    <input type="email" class="inputs" placeholder="Email" name="email" id="" required>
+                    <input type="tel" class="inputs" placeholder="Phone Number" name="phone number" id="">
                 </div>
                 <div class="contact-right">
-                    <textarea name="" id="" class="message" cols="25" rows="6" placeholder="What you'd like to say..."></textarea>
-                    <button type="submits" class="submit-button">Submit</button>
+                    <textarea name="content" id="" class="message" cols="25" rows="6" placeholder="What you'd like to say..." required></textarea>
+                    <button type="submit" class="submit-button">Submit</button>
                 </div>
-            </div>
+            </form>
             <div class="social-links">
-                <p class="check-out-socials">See more on:</p>
-                <img class="social-icon" src="images/github.svg" alt="github">
-                <img class="social-icon" src="images/instagram.svg" alt="">
+                <p class="check-out-socials">See more of me on:</p>
+                <a class="social-icon" href="https://github.com/HarkHorning">
+                    <img class="social-image" src="images/github.svg" alt="github">
+                </a>
+                <a class="social-icon" href="https://www.instagram.com/harkhorning/">
+                    <img class="social-image" src="images/instagram.svg" alt="">
+                </a>
             </div>
         </footer>
     </div>
