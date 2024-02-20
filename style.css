@@ -9,6 +9,10 @@ body {
     background-color: whitesmoke;
 }
 
+a {
+    text-decoration: none;
+}
+
 :root {
     --color: rgb(32, 32, 32);
     --box-shadow: 1px 1px 5px 0px rgba(0, 27, 27, 0.308);
@@ -32,8 +36,8 @@ body {
 
 .cursor-effect-alt-two {
     background: radial-gradient(circle at calc(var(--x) * 1px) calc(var(--y) * 1px),
-        hsla(313, 30%, 66%, 0.212),
-        transparent 200px),
+        hsla(313, 100%, 50%, 0.212),
+        transparent 300px),
         rgba(183, 195, 207, 0.65);
         background-attachment: fixed;
 }
@@ -55,15 +59,6 @@ body {
     width: 100%;
     height: 100svh;
     z-index: -4;
-}
-
-#backgroundmountains {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100svh;
-    opacity: 0.4;
-    z-index: -3;
 }
 
 @keyframes swinging {
@@ -197,8 +192,8 @@ body {
     font-size: 15rem;
     color: white;
     line-height: 10.6rem;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: rgb(78, 78, 78);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(65, 65, 65);
     width: 110%;
     /* font-style: italic; */
 }
@@ -223,6 +218,8 @@ body {
     /* color: rgb(34, 34, 34); */
     font-family: 'Inter';
     font-weight: 900;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
 #vocation-box2 {
@@ -239,6 +236,8 @@ body {
     color: black;
     font-family: 'Inter';
     font-weight: 900;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
 }
 
                                             /* section two */
@@ -247,8 +246,8 @@ body {
     position: relative;
     margin-top: 20svh;
     left: 15%;
-    width: 55%;
-    height: 120svh;
+    width: 50rem;
+    height: 55rem;
     box-shadow: var(--box-shadow);
     background-color: rgb(255, 255, 254);
     /* transform: rotate(-3deg); */
@@ -256,27 +255,48 @@ body {
 
 .about-me {
     position: absolute;
-    top: 10%;
-    left: 15%;
-    font-size: 3rem;
+    top: 5rem;
+    left: 12.5%;
+    font-size: 2.75rem;
     font-family: 'Inter';
+    color: rgb(165, 79, 79);
+    font-weight: bolder;
+
 }
 
 .all-about-me {
     position: absolute;
-    top: 25%;
-    left: 15%;
-    max-width: 70%;
+    top: 20%;
+    left: 12.5%;
+    max-width: 75%;
     font-size: 1.5rem;
-    line-height: 2;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    line-height: 3.5rem;
     font-family: 'Inter';
+}
+
+.the-tools {
+    list-style: none;
+    font-size: 1.25rem;
+    color: rgb(143, 143, 143);
+
+    font-family: 'Inter';
+    position: absolute;
+    top: 44rem;
+    left: 12.5%;
+    width: 75%;
+    font-weight: 600;
 }
 
 .skills {
     position: absolute;
-    top: 85%;
-    left: 15%;
-    width: 70%;
+    top: 47rem;
+    left: 12.5%;
+    width: 75%;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -378,9 +398,21 @@ body {
     width: 100%;
 }
 
-.description-section {
+.project-title {
     position: absolute;
     top: 55%;
+    left: 6%;
+    display: flex;
+    justify-content: center;
+    color: rgb(112, 112, 112);
+    font-size: 1.75rem;
+    font-family: 'Inter';
+    font-weight: bolder;
+}
+
+.description-section {
+    position: absolute;
+    top: 62%;
     left: 6%;
     display: flex;
     justify-content: center;
@@ -413,7 +445,7 @@ body {
 .contact-me-text {
     position: absolute;
     color: rgb(24, 24, 24);
-    margin-top: 10svh;
+    margin-top: 0svh;
     left: 10%;
     font-size: 4rem;
     z-index: 2;
@@ -427,8 +459,8 @@ footer {
     margin-top: 25svh;
     height: 65svh;
     width: 100%;
-    background-color: rgb(31, 31, 31);
-    border: 1px solid black;
+    background-color: rgba(59, 59, 59, 0);
+    border: none;
 }
 
 #contact-form {
@@ -457,14 +489,18 @@ footer {
     height: 4vh;
     padding-left: 2%;
     border-radius: 0.5rem;
-    font-size: 1.25rem;
+    border: none;
+    font-size: 1.5rem;
 }
 
 .submit-button {
     height: 5vh;
     width: 25%;
     border-radius: 0.5rem;
-    font-size: 1.5rem;
+    border: none;
+    font-size: 1.75rem;
+    color: rgb(49, 49, 49);
+    background-color: rgb(255, 255, 255);
 }
 
 .contact-right {
@@ -477,12 +513,13 @@ footer {
 }
 
 .message {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     width: 80%;
     min-height: 50%;
     margin-top: 2%;
     padding: 2%;
     border-radius: 0.5rem;
+    border: none;
 }
 
 .social-links {
@@ -498,6 +535,10 @@ footer {
 .social-icon {
     height: 45%;
     padding-left: 40%;
+}
+
+.social-image {
+    height: 100%;
 }
 
 .check-out-socials {
