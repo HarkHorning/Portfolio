@@ -42,14 +42,21 @@
         <section id="section-two">
             <!-- <img src="images/other no background black and white2.png" class="arrogance" alt=""> -->
             <h3 class="about-me">About Me:</h3>
-            <p class="all-about-me">Hello! My name is Hark. In my free time I rock climb, play piano, and make art.
+            <p class="all-about-me">
+                My name is Hark. In my spare time I climb things, play piano, make art, and last, 
+                but certainly not least, I like to program. It’s been my great joy this past year 
+                to discover the amazing world of programming and the rich ecosystems of people and 
+                tools around each new technology. Looking back at what I’ve learned to make in a 
+                year, I can’t wait to see what I can build in one year from now. 
             </p>
+            <p class="the-tools">My skills:</p>
             <ul class="skills">
-                <li class="skills-list">javascript</li>
-                <li class="skills-list">HTML 5</li>
-                <li class="skills-list">CSS</li>
+                <li class="skills-list">Javascript</li>
+                <li class="skills-list">HTML/CSS</li>
+                <li class="skills-list">Node.js</li>
+                <li class="skills-list">Express.js</li>
                 <li class="skills-list">React.js</li>
-                <li class="skills-list">Python</li>
+                <!-- <li class="skills-list">Python</li> -->
             </ul>
         </section>
         <section class="section-three">
@@ -57,14 +64,15 @@
             <h4 id="my-work">Some Projects:</h4>
             <div class="my-work-card">
                 <div class="project-selection">
-                    <div id="projectThree" class="projects">Fullstack Blog Website</div>
+                    <a href="https://contemporary-wizard.onrender.com/" id="projectThree" class="projects">Fullstack Blog Website</a>
                     <a href="https://harkhorning.github.io/2d-Game/" id="projectOne" class="projects">Side Scroller Game</a>
-                    <div id="projectTwo" class="projects">Fireworks Site</div>
-                    <div id="projectFour" class="projects">Figma Design</div>
+                    <a id="projectTwo" class="projects">Fireworks Site</a>
+                    <!-- <div id="projectFour" class="projects">Figma Design</div> -->
                 </div>
                 <div class="hidden-display">
                     <div id="numberOne" class="hidden-rotate">
                         <img src="images/game.gif" alt="game gif" class="images-section">
+                        <p class="project-title">Side Scroller Game</p>
                         <p class="description-section">In this vanilla javascript project, I used the canvas api 
                             to build this simple game. It's made with a few free sprite sheets I found and then some
                             I made. It was really fun to make. I plan to make more like it.
@@ -72,16 +80,20 @@
                     </div>
                     <div id="numberTwo" class="hidden-rotate">
                         <img src="images/fireworks.gif" alt="site gif" class="images-section">
+                        <p class="project-title">Fireworks Website</p>
                         <p class="description-section">Yellow!</p>
                     </div>
                     <div id="numberThree" class="hidden-rotate">
-                        <img src="" alt="image" class="images-section">
-                        <p class="description-section">Red Light!</p>
+                        <img src="images/Screenshot 2024-02-19 190937.png" alt="image" class="images-section">
+                        <p class="project-title">Fullstack Blog</p>
+                        <p class="description-section">I used Node.JS Express.JS, MongoDB, and EJS to build this Fullstack Blog.
+
+                        </p>
                     </div>
-                    <div id="numberFour" class="hidden-rotate">
+                    <!-- <div id="numberFour" class="hidden-rotate">
                         <img src="" alt="image" class="images-section">
                         <p class="description-section">Vrooooom!</p>
-                    </div>
+                    </div> -->
                 </div>
 
                 <script>
@@ -90,38 +102,30 @@
                     const projectThree = document.getElementById('projectThree');
                     const projectFour = document.getElementById('projectFour');
 
-                    // const projects = [projectOne, projectTwo, projectTree, projectFour];
-
-                    // window.addEventListener('mouseover', (e) => {
-                    //     if ((e.projectOne)) {
-                    //         console.log('testitizing');
-                    //     }
-                    // })
-
                     projectOne.addEventListener("mouseover", (event) => {
                         document.getElementById("numberThree").className = 'hidden-rotate';
                         document.getElementById("numberTwo").className = 'hidden-rotate';
-                        document.getElementById("numberFour").className = 'hidden-rotate';
+                        // document.getElementById("numberFour").className = 'hidden-rotate';
                         document.getElementById("numberOne").className = 'not-hidden';
                     });
                     projectTwo.addEventListener("mouseover", (event) => {
                         document.getElementById("numberThree").className = 'hidden-rotate';
                         document.getElementById("numberOne").className = 'hidden-rotate';
-                        document.getElementById("numberFour").className = 'hidden-rotate';
+                        // document.getElementById("numberFour").className = 'hidden-rotate';
                         document.getElementById("numberTwo").className = 'not-hidden';
                     });
                     projectThree.addEventListener("mouseover", (event) => {
                         document.getElementById("numberTwo").className = 'hidden-rotate';
                         document.getElementById("numberOne").className = 'hidden-rotate';
-                        document.getElementById("numberFour").className = 'hidden-rotate';
+                        // document.getElementById("numberFour").className = 'hidden-rotate';
                         document.getElementById("numberThree").className = 'not-hidden';
                     });
-                    projectFour.addEventListener("mouseover", (event) => {
-                        document.getElementById("numberOne").className = 'hidden-rotate';
-                        document.getElementById("numberTwo").className = 'hidden-rotate';
-                        document.getElementById("numberThree").className = 'hidden-rotate';
-                        document.getElementById("numberFour").className = 'not-hidden';
-                    });
+//                    projectFour.addEventListener("mouseover", (event) => {
+//                        document.getElementById("numberOne").className = 'hidden-rotate';
+//                        document.getElementById("numberTwo").className = 'hidden-rotate';
+//                        document.getElementById("numberThree").className = 'hidden-rotate';
+//                        document.getElementById("numberFour").className = 'not-hidden';
+//                    });
 
                 </script>
             </div>
